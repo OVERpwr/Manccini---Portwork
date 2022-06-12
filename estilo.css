@@ -1,0 +1,170 @@
+body{
+  font-family: 'Nunito', Sans-Serif;
+  color: #1c1c1c;
+}
+h1, h2, h3 {
+  font-family: 'asap', Sans-Serif;
+  color: #000000;
+}
+.botao {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: #282828;
+  font-size: .9em;
+  border-radius: 3px;
+}
+/* menu */
+
+nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #282828;
+}
+nav > a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 32px;
+  font-family: 'Yellowtail', serif;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+nav ul li {
+  text-align: center;
+  width: 100%;
+}
+nav ul li a {
+  display: inline-block;
+  padding: 10px 0;
+  width: 100%;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+/* cabeçario */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+}
+header h1 {
+  color: #000000;
+}
+header p {
+  margin-bottom: 2em;
+}
+#sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 10px 20px 20px;
+  background-color: #282828;
+  color: #FFFFFF;
+}
+#sobre h2 {
+  color: #FFFFFF;
+}
+#sobre p {
+  margin-bottom: 2.5em;
+  max-width: 1000px;
+}
+#sobre .botao {
+  background-color: #ffffff;
+  color: #1c1c1c;
+}
+/* serviços/ cade os desenhos João Pedro */
+#produtos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* contato */
+#contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+#contato img {
+    align-items: center;
+    max-height:50px;
+    width: auto;
+    height: auto;
+}
+#contato h2 {
+  color: #000000;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #282828;
+  color: #ffffff;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer .botao {
+  background-color: #ffffff;
+  color: #1c1c1c;
+}
+@midia screen and (min-width: 768px) {
+  /*  navegação */
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  nav ul {
+    flex-direction: row;
+    width: 70%;
+  }
+  /* cabeçario */
+  header {
+    height: 600px;
+    height: 60vh;
+    justify-content: center;
+  }
+  /* sobre */
+  #sobre {
+    height: 260px;
+    height: 30vh;
+    justify-content: center;
+    min-height: 250px;
+  }
+  /* serviços / desenho do joao pedro chega nunka*/
+  #produtos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0px auto;
+  }
+  #produtos h2 {
+    text-align: center;
+    width: 100%;
+  }
+  /* contato */
+  #contato {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  #contato h2, #contato p {
+    width: 100%;
+  }
+}
